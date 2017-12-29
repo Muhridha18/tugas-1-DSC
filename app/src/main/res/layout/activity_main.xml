@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.muhri.myapplication.MainActivity"
+    android:background="@color/colormidblue">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_account_balance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/gambar"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muh. Ridha Ali Kadir"
+            android:textColor="@color/colorClouds"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/gambar"
+            android:id="@+id/nama"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Chief Executive Officer"
+            android:textColor="@color/colorClouds"
+            android:id="@+id/pekerjaan"
+            android:textSize="15dp"
+            android:fontFamily="casual"
+            android:layout_below="@id/nama"
+
+            />
+         <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pekerjaan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+             android:id="@+id/keterangan"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/nophone">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_phone"
+                android:id="@+id/nophone"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/nophone"
+                android:text="+6282 19 197 1758"
+                android:textColor="@color/colorClouds"
+                />
+        </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/nophone"
+           >
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:src="@drawable/ic_email"
+               android:id="@+id/email"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="muhridhaalikadir@hotmail.com"
+               android:textColor="@color/colorClouds"
+               android:layout_toRightOf="@id/email"
+               />
+       </RelativeLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aluf Studio Project"
+        android:textColor="@color/colorClouds"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/keterangan"
+        android:layout_marginTop="100dp"
+        android:id="@+id/perusahaan"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jln. Urip Sumohardjo Km.5 No.01"
+        android:textColor="@color/colorClouds"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/perusahaan"/>
+
+</RelativeLayout>
